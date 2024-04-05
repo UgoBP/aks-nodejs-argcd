@@ -56,6 +56,9 @@ jobs:
       - run:
           name: Pull Updated code from repo
           command: git pull origin $CIRCLE_BRANCH
+      - run:
+          name: apt-get update
+          command: apt-get update
       - azure-aks/update-kubeconfig-with-credentials:
           cluster-name: << parameters.cluster-name >>
           install-kubectl: true
