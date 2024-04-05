@@ -8,4 +8,4 @@ namespace: nodejs
 images:
 - name: aks-nodejs-argocd
   newName: ugoben/aks-nodejs-argocd
-  newTag: 74566002def188a8b812d100980ba6e54a9b56c9
+  newTag: b0cf84006103fceabc86c3c78fe0147fa38bda55
