@@ -99,7 +99,7 @@ workflows:
   Deploy-App-on-AKS:
     jobs:
       - docker/publish:
-          image: $APP_NAME
+          image: ugoben/$APP_NAME
           tag: latest
       - bump-docker-tag-kustomize:
           requires:
