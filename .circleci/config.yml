@@ -80,8 +80,8 @@ jobs:
       - run:
           name: Bump Docker Tag
           command: |
-            cd manifests
-            kustomize edit set image $APP_NAME=$DOCKER_LOGIN/$APP_NAME:$CIRCLE_SHA1
+            cd manifest
+            kustomize edit set image $APP_NAME=ugoben/$APP_NAME:$CIRCLE_SHA1
       - add_ssh_keys:
           fingerprints:
             - "$SSH_FINGERPRINT"
