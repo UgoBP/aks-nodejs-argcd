@@ -8,4 +8,4 @@ namespace: nodejs
 images:
   - name: aks-nodejs-argocd
     newName: aks-nodejs-argocd
-    newTag: v1
+    newTag: v2
