@@ -10,5 +10,5 @@ spec:
   source:
     path: manifest
     repoURL: "https://github.com/UgoBP/aks-nodejs-argcd"
-    targetRevision: circleci-project-setup
+    targetRevision: main
   project: default
