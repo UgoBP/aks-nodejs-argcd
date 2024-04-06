@@ -91,11 +91,12 @@ jobs:
             $SUDO chmod +x ./kustomize
             $SUDO mv ./kustomize /usr/local/bin
       - checkout
+      # check auto update with $APP_NAME=ugoben/$APP_NAME:$CIRCLE_SHA1
       - run:
           name: Bump Docker Tag
           command: |
             cd manifest
-            kustomize edit set image $APP_NAME=ugoben/$APP_NAME:$CIRCLE_SHA1
+            kustomize edit set image $APP_NAME=ugoben/$APP_NAME:latest  
       - add_ssh_keys:
           fingerprints:
             - "$SSH_FINGERPRINT"
